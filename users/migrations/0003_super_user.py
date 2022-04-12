@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('users', '0002_groups'),
     ]
-    #
-    # operations = [
-    #     migrations.RunPython(create_super_user)
-    # ]
+
+    operations = [
+        migrations.RunPython(create_super_user)
+    ]

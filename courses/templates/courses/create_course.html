@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Create course
+{% endblock %}
+
+{% block container %}
+    <h1>Add new course</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+{% endblock %}
